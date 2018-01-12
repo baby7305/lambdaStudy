@@ -10,7 +10,7 @@ public class LambdaMain {
 
 	public static void main(String[] args) {
 		LambdaMain lambdaMain = new LambdaMain();
-		System.out.println(lambdaMain.test((int x, int y) -> {
+		System.out.println(lambdaMain.test((x, y) -> {
 			return x + y;
 		}));
 	}
