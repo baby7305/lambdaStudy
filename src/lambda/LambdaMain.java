@@ -4,15 +4,15 @@ package lambda;
  * Created by Administrator on 2018/1/12.
  */
 public class LambdaMain {
+	public void test(InLambda inLambda){
+		inLambda.performed();
+
+	}
 	public static void main(String[] args) {
-//		InLambda inLambda = () -> {
-//			System.out.println("Hello lambda");
-//		};
-//		inLambda.performed();
-		InLambda inLambda = (int x, int y) -> {
-			System.out.println(x + y);
-			return x + y;
+		LambdaMain lambdaMain=new LambdaMain();
+		InLambda inLambda = () -> {
+			System.out.println("Hello lambda");
 		};
-		inLambda.performed1(2, 4);
+		lambdaMain.test(inLambda);
 	}
 }
