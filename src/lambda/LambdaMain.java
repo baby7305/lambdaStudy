@@ -10,9 +10,9 @@ public class LambdaMain {
 //		};
 //		inLambda.performed();
 		InLambda inLambda = (int x, int y) -> {
-			System.out.println(x + y);
 			return x + y;
 		};
-		inLambda.performed1(2, 4);
+
+		System.out.println(inLambda.performed1(2, 4));
 	}
 }
