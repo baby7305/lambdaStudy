@@ -9,10 +9,9 @@ public class LambdaMain {
 	}
 
 	public static void main(String[] args) {
-		LambdaMain lambdaMain=new LambdaMain();
-		InLambda inLambda = (int x, int y) -> {
+		LambdaMain lambdaMain = new LambdaMain();
+		System.out.println(lambdaMain.test((int x, int y) -> {
 			return x + y;
-		};
-		System.out.println(lambdaMain.test(inLambda));
+		}));
 	}
 }
