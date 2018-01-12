@@ -10,9 +10,8 @@ public class LambdaMain {
 	}
 	public static void main(String[] args) {
 		LambdaMain lambdaMain=new LambdaMain();
-		InLambda inLambda = () -> {
+		lambdaMain.test(() -> {
 			System.out.println("Hello lambda");
-		};
-		lambdaMain.test(inLambda);
+		});
 	}
 }
